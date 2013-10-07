@@ -1,0 +1,32 @@
+import sqlite3
+import nabber
+from dbhandler import db_session, init_db
+from models import Incident
+
+
+
+db_session()
+
+def create_db():
+    """Creates a sqlite3 database using our models"""
+    init_db()
+
+def addto_db():
+    """adds our incidents to the db"""
+    crimelist = nabber.epdcrimelist()
+    for each in crimelist:
+        inputid = each['ID']
+        inputporesp = each['PoResp']
+        inputdescription = each['Description']
+        inputofc = each['OFC']
+        inputtimerec = each['TimeReceived']
+        inputlocation = each['Location']
+        inputeventNum = each['EventNum']
+        inputpriority = each['Priority']
+        inputcaseNo = each['CaseNo']
+        incident = Incident(id = inputid, poresp = inputporesp, description = inputdescription, ofc = inputofc, timerec = inputtimerec, location = inputlocation, eventNum = inputeventNum, priority = inputpriority, caseNo = inputcaseNo)
+        db_session.add(incident)
+        db_session.commit()
+
+db_session.remove()
+
