@@ -1,0 +1,263 @@
+import nabber
+print doc
+# OUT: Traceback (most recent call last):
+# OUT:   File "<input>", line 1, in <module>
+# OUT: NameError: name 'doc' is not defined
+print nabber.doc
+# OUT: <Element html at 0x10fd4d830>
+print nabber.result.index
+# OUT: <built-in method index of list object at 0x10fd5c7a0>
+nabber.html
+# OUT: '\r\n\r\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">\r\n\r\n<html xmlns="http://www.w3.org/1999/xhtml" >\r\n<head><title>\r\n\tCAD Dispatch\r\n</title><meta http-equiv="refresh" content="600" />\r\n\r\n<script type="text/javascript">\r\n\r\n/* \r\n\r\nBecause this is a true refresh, you might want to put a\r\nnotice on the page that it refreshes every "X" minutes \r\n\r\nfunction reFresh() {\r\n location.reload(true);\r\n}\r\n/* Set the number below to the amount of delay, in milliseconds,\r\nyou want between page reloads: 1 minute = 60000 milliseconds. \r\nwindow.setInterval("reFresh()",600000);\r\n*/\r\n// End -->\r\n</script>\r\n<meta http-equiv="refresh" content="600" /></head>\r\n\r\n<body>\r\n    <form name="form1" method="post" action="/epdpubliccad/default.aspx" id="form1">\r\n<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTk4MDUwODcxMA9kFgICAw9kFgICAw8QDxYEHhRBcHBlbmREYXRhQm91bmRJdGVtc2ceC18hRGF0YUJvdW5kZ2QPFhBmAgECAgIDAgQCBQIGAgcCCAIJAgoCCwIMAg0CDgIPFhAQBRItLSBTZWxlY3QgRGF0ZSAgLS0FEi0tIFNlbGVjdCBEYXRlICAtLWcQBQoxMC8wNy8yMDEzBQoxMC8wNy8yMDEzZxAFCjEwLzA2LzIwMTMFCjEwLzA2LzIwMTNnEAUKMTAvMDUvMjAxMwUKMTAvMDUvMjAxM2cQBQoxMC8wNC8yMDEzBQoxMC8wNC8yMDEzZxAFCjEwLzAzLzIwMTMFCjEwLzAzLzIwMTNnEAUKMTAvMDIvMjAxMwUKMTAvMDIvMjAxM2cQBQoxMC8wMS8yMDEzBQoxMC8wMS8yMDEzZxAFCjA5LzMwLzIwMTMFCjA5LzMwLzIwMTNnEAUKMDkvMjkvMjAxMwUKMDkvMjkvMjAxM2cQBQowOS8yOC8yMDEzBQowOS8yOC8yMDEzZxAFCjA5LzI3LzIwMTMFCjA5LzI3LzIwMTNnEAUKMDkvMjYvMjAxMwUKMDkvMjYvMjAxM2cQBQowOS8yNS8yMDEzBQowOS8yNS8yMDEzZxAFCjA5LzI0LzIwMTMFCjA5LzI0LzIwMTNnEAUKMDkvMjMvMjAxMwUKMDkvMjMvMjAxM2cWAWZkZBgMtbyW+9AqTWj+uyPi0y2qLRJd" />\r\n\r\n<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEWEQLUpfqsCwLX9qu+BQKEj5S7BwKjj5S7BwLCj5S7BwLhj5S7BwKIkJS7BwKnkJS7BwLGkJS7BwLmiLT1DAKdhdj/CQL+htj/CQLDh9j/CQKkh9j/CQKBhtj/CQLih9j/CQLHiNj/CZIjpYDneqlkyMShwYBj0INzUFi1" />\r\n    <div align="center">\r\n    <img src="Police-Dept-LWD.jpg" alt="EPD Logo" />\r\n    </div>\r\n        \r\n        <div align="center">\r\n        <table width="980px">\r\n            <tr>\r\n                <td>Data shown for the previous 1 hour.  Data is refreshed every 10 minutes.</td>\r\n            </tr>\r\n            <tr>\r\n                <td>Select date for all data that occurred on that day.  Expect 1-2 minutes loading time.</td>\r\n            </tr>\r\n            <tr>\r\n            \r\n                <td align="center"><select name="ddlSelect" id="ddlSelect">\r\n\t<option selected="selected" value="-- Select Date  --">-- Select Date  --</option>\r\n\t<option value="10/07/2013">10/07/2013</option>\r\n\t<option value="10/06/2013">10/06/2013</option>\r\n\t<option value="10/05/2013">10/05/2013</option>\r\n\t<option value="10/04/2013">10/04/2013</option>\r\n\t<option value="10/03/2013">10/03/2013</option>\r\n\t<option value="10/02/2013">10/02/2013</option>\r\n\t<option value="10/01/2013">10/01/2013</option>\r\n\t<option value="09/30/2013">09/30/2013</option>\r\n\t<option value="09/29/2013">09/29/2013</option>\r\n\t<option value="09/28/2013">09/28/2013</option>\r\n\t<option value="09/27/2013">09/27/2013</option>\r\n\t<option value="09/26/2013">09/26/2013</option>\r\n\t<option value="09/25/2013">09/25/2013</option>\r\n\t<option value="09/24/2013">09/24/2013</option>\r\n\t<option value="09/23/2013">09/23/2013</option>\r\n\r\n</select></td>\r\n            </tr>\r\n        </table>\r\n            \r\n       \r\n        \r\n        <table id="DisplayCAD1_tblCad" border="0" width="980">\r\n\t<tr>\r\n\t\t<td align="left"><strong>Police Response:</strong> 10/7/2013 9:59:02 AM</td><td align="left">Incident Desc: Person Stop</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 9:59:02 AM</td>\r\n\t</tr><tr>\r\n\t\t<td align="left">Disp: ADVI</td><td align="left" colspan="2">Location: 710 MCKINLEY ST, EUG</td>\r\n\t</tr><tr>\r\n\t\t<td align="left" colspan="1">Event Number: LEP131007100369</td><td align="left">ID: 100369</td><td align="left">Priority: 6</td><td align="left">Case No: </td>\r\n\t</tr><tr>\r\n\t\t<td colspan="4" bgcolor="MediumSlateBlue"><hr color=\'#000000\' /> </td>\r\n\t</tr><tr>\r\n\t\t<td align="left"><strong>Police Response:</strong> </td><td align="left">Incident Desc: Reckless Driving</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 9:59:21 AM</td>\r\n\t</tr><tr>\r\n\t\t<td align="left">Disp: REL</td><td align="left" colspan="2">Location: TIMBERLINE DR&ASHFORD DR, EUG</td>\r\n\t</tr><tr>\r\n\t\t<td align="left" colspan="1">Event Number: LEP131007100371</td><td align="left">ID: 100371</td><td align="left">Priority: 3</td><td align="left">Case No: </td>\r\n\t</tr><tr>\r\n\t\t<td colspan="4" bgcolor="MediumSlateBlue"><hr color=\'#000000\' /> </td>\r\n\t</tr><tr>\r\n\t\t<td align="left"><strong>Police Response:</strong> </td><td align="left">Incident Desc: Theft from Vehicle</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 9:59:22 AM</td>\r\n\t</tr><tr>\r\n\t\t<td align="left">Disp: REPT</td><td align="left" colspan="2">Location: 875 WASHINGTON ST, EUG</td>\r\n\t</tr><tr>\r\n\t\t<td align="left" colspan="1">Event Number: LEP131007100370</td><td align="left">ID: 100370</td><td align="left">Priority: 9</td><td align="left">Case No: LEP131007018275</td>\r\n\t</tr><tr>\r\n\t\t<td colspan="4" bgcolor="MediumSlateBlue"><hr color=\'#000000\' /> </td>\r\n\t</tr><tr>\r\n\t\t<td align="left"><strong>Police Response:</strong> 10/7/2013 10:14:47 AM</td><td align="left">Incident Desc: Patrol Check</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 10:14:47 AM</td>\r\n\t</tr><tr>\r\n\t\t<td align="left">Disp: PCHK</td><td align="left" colspan="2">Location: 341 E 12TH AVE, EUG</td>\r\n\t</tr><tr>\r\n\t\t<td align="left" colspan="1">Event Number: LEP131007100373</td><td align="left">ID: 100373</td><td align="left">Priority: 6</td><td align="left">Case No: </td>\r\n\t</tr><tr>\r\n\t\t<td colspan="4" bgcolor="MediumSlateBlue"><hr color=\'#000000\' /> </td>\r\n\t</tr><tr>\r\n\t\t<td align="left"><strong>Police Response:</strong> </td><td align="left">Incident Desc: Theft ID</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 10:29:20 AM</td>\r\n\t</tr><tr>\r\n\t\t<td align="left">Disp: DESK</td><td align="left" colspan="2">Location: 2650 SUNNYVIEW LN, EUG</td>\r\n\t</tr><tr>\r\n\t\t<td align="left" colspan="1">Event Number: LEP131007100376</td><td align="left">ID: 100376</td><td align="left">Priority: 9</td><td align="left">Case No: </td>\r\n\t</tr><tr>\r\n\t\t<td colspan="4" bgcolor="MediumSlateBlue"><hr color=\'#000000\' /> </td>\r\n\t</tr><tr>\r\n\t\t<td align="left"><strong>Police Response:</strong> </td><td align="left">Incident Desc: Theft</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 10:32:18 AM</td>\r\n\t</tr><tr>\r\n\t\t<td align="left">Disp: INFO</td><td align="left" colspan="2">Location: 849 W 6TH AVE, EUG</td>\r\n\t</tr><tr>\r\n\t\t<td align="left" colspan="1">Event Number: LEP131007100377</td><td align="left">ID: 100377</td><td align="left">Priority: 9</td><td align="left">Case No: </td>\r\n\t</tr><tr>\r\n\t\t<td colspan="4" bgcolor="MediumSlateBlue"><hr color=\'#000000\' /> </td>\r\n\t</tr><tr>\r\n\t\t<td align="left"><strong>Police Response:</strong> </td><td align="left">Incident Desc: Illegal Camping</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 10:34:39 AM</td>\r\n\t</tr><tr>\r\n\t\t<td align="left">Disp: CAMP</td><td align="left" colspan="2">Location: ALMADEN ST&W 6TH AVE, EUG</td>\r\n\t</tr><tr>\r\n\t\t<td align="left" colspan="1">Event Number: LEP131007100381</td><td align="left">ID: 100381</td><td align="left">Priority: 0</td><td align="left">Case No: </td>\r\n\t</tr>\r\n</table>\r\n         </div>\r\n    </form>\r\n</body>\r\n</html>\r\n\r\n'
+import lxml.html
+doc = lxml.html.document_fromstring(nabber.html)
+result = doc.xpath('/html/body/form/div[2]/table[2]')
+print result
+# OUT: [<Element table at 0x10fd7e770>]
+import lxml.etree
+print lxml.etree.tostring(nabber.result[0])
+# OUT: <table id="DisplayCAD1_tblCad" border="0" width="980"><tr><td align="left"><strong>Police Response:</strong> 10/7/2013 9:59:02 AM</td><td align="left">Incident Desc: Person Stop</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 9:59:02 AM</td>&#13;
+# OUT: 	</tr><tr><td align="left">Disp: ADVI</td><td align="left" colspan="2">Location: 710 MCKINLEY ST, EUG</td>&#13;
+# OUT: 	</tr><tr><td align="left" colspan="1">Event Number: LEP131007100369</td><td align="left">ID: 100369</td><td align="left">Priority: 6</td><td align="left">Case No: </td>&#13;
+# OUT: 	</tr><tr><td colspan="4" bgcolor="MediumSlateBlue"><hr color="#000000" /></td>&#13;
+# OUT: 	</tr><tr><td align="left"><strong>Police Response:</strong> </td><td align="left">Incident Desc: Reckless Driving</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 9:59:21 AM</td>&#13;
+# OUT: 	</tr><tr><td align="left">Disp: REL</td><td align="left" colspan="2">Location: TIMBERLINE DR&amp;ASHFORD DR, EUG</td>&#13;
+# OUT: 	</tr><tr><td align="left" colspan="1">Event Number: LEP131007100371</td><td align="left">ID: 100371</td><td align="left">Priority: 3</td><td align="left">Case No: </td>&#13;
+# OUT: 	</tr><tr><td colspan="4" bgcolor="MediumSlateBlue"><hr color="#000000" /></td>&#13;
+# OUT: 	</tr><tr><td align="left"><strong>Police Response:</strong> </td><td align="left">Incident Desc: Theft from Vehicle</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 9:59:22 AM</td>&#13;
+# OUT: 	</tr><tr><td align="left">Disp: REPT</td><td align="left" colspan="2">Location: 875 WASHINGTON ST, EUG</td>&#13;
+# OUT: 	</tr><tr><td align="left" colspan="1">Event Number: LEP131007100370</td><td align="left">ID: 100370</td><td align="left">Priority: 9</td><td align="left">Case No: LEP131007018275</td>&#13;
+# OUT: 	</tr><tr><td colspan="4" bgcolor="MediumSlateBlue"><hr color="#000000" /></td>&#13;
+# OUT: 	</tr><tr><td align="left"><strong>Police Response:</strong> 10/7/2013 10:14:47 AM</td><td align="left">Incident Desc: Patrol Check</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 10:14:47 AM</td>&#13;
+# OUT: 	</tr><tr><td align="left">Disp: PCHK</td><td align="left" colspan="2">Location: 341 E 12TH AVE, EUG</td>&#13;
+# OUT: 	</tr><tr><td align="left" colspan="1">Event Number: LEP131007100373</td><td align="left">ID: 100373</td><td align="left">Priority: 6</td><td align="left">Case No: </td>&#13;
+# OUT: 	</tr><tr><td colspan="4" bgcolor="MediumSlateBlue"><hr color="#000000" /></td>&#13;
+# OUT: 	</tr><tr><td align="left"><strong>Police Response:</strong> </td><td align="left">Incident Desc: Theft ID</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 10:29:20 AM</td>&#13;
+# OUT: 	</tr><tr><td align="left">Disp: DESK</td><td align="left" colspan="2">Location: 2650 SUNNYVIEW LN, EUG</td>&#13;
+# OUT: 	</tr><tr><td align="left" colspan="1">Event Number: LEP131007100376</td><td align="left">ID: 100376</td><td align="left">Priority: 9</td><td align="left">Case No: </td>&#13;
+# OUT: 	</tr><tr><td colspan="4" bgcolor="MediumSlateBlue"><hr color="#000000" /></td>&#13;
+# OUT: 	</tr><tr><td align="left"><strong>Police Response:</strong> </td><td align="left">Incident Desc: Theft</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 10:32:18 AM</td>&#13;
+# OUT: 	</tr><tr><td align="left">Disp: INFO</td><td align="left" colspan="2">Location: 849 W 6TH AVE, EUG</td>&#13;
+# OUT: 	</tr><tr><td align="left" colspan="1">Event Number: LEP131007100377</td><td align="left">ID: 100377</td><td align="left">Priority: 9</td><td align="left">Case No: </td>&#13;
+# OUT: 	</tr><tr><td colspan="4" bgcolor="MediumSlateBlue"><hr color="#000000" /></td>&#13;
+# OUT: 	</tr><tr><td align="left"><strong>Police Response:</strong> </td><td align="left">Incident Desc: Illegal Camping</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 10:34:39 AM</td>&#13;
+# OUT: 	</tr><tr><td align="left">Disp: CAMP</td><td align="left" colspan="2">Location: ALMADEN ST&amp;W 6TH AVE, EUG</td>&#13;
+# OUT: 	</tr><tr><td align="left" colspan="1">Event Number: LEP131007100381</td><td align="left">ID: 100381</td><td align="left">Priority: 0</td><td align="left">Case No: </td>&#13;
+# OUT: 	</tr></table>
+result = doc.xpath('/html/body/form/div[2]/table[2]/tr')
+print lxml.etree.tostring(result[0])
+# OUT: <tr><td align="left"><strong>Police Response:</strong> 10/7/2013 9:59:02 AM</td><td align="left">Incident Desc: Person Stop</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 9:59:02 AM</td>&#13;
+# OUT: 	</tr>
+print lxml.etree.tostring(result[1])
+# OUT: <tr><td align="left">Disp: ADVI</td><td align="left" colspan="2">Location: 710 MCKINLEY ST, EUG</td>&#13;
+# OUT: 	</tr>
+print lxml.etree.tostring(result[2])
+# OUT: <tr><td align="left" colspan="1">Event Number: LEP131007100369</td><td align="left">ID: 100369</td><td align="left">Priority: 6</td><td align="left">Case No: </td>&#13;
+# OUT: 	</tr>
+print lxml.etree.tostring(result[3])
+# OUT: <tr><td colspan="4" bgcolor="MediumSlateBlue"><hr color="#000000" /></td>&#13;
+# OUT: 	</tr>
+print lxml.etree.tostring(result[4])
+# OUT: <tr><td align="left"><strong>Police Response:</strong> </td><td align="left">Incident Desc: Reckless Driving</td><td align="left">OFC: </td><td align="left">Received: 10/7/2013 9:59:21 AM</td>&#13;
+# OUT: 	</tr>
+result = doc.xpath('/html/body/form/div[2]/table[2]/tr/td')
+print lxml.etree.tostring(result[0])
+# OUT: <td align="left"><strong>Police Response:</strong> 10/7/2013 9:59:02 AM</td>
+print lxml.etree.tostring(result[1])
+# OUT: <td align="left">Incident Desc: Person Stop</td>
+print lxml.etree.tostring(result[2])
+# OUT: <td align="left">OFC: </td>
+print lxml.etree.tostring(result[3])
+# OUT: <td align="left">Received: 10/7/2013 9:59:02 AM</td>&#13;
+print lxml.etree.tostring(result[4])
+# OUT: <td align="left">Disp: ADVI</td>
+print lxml.etree.tostring(result[5])
+# OUT: <td align="left" colspan="2">Location: 710 MCKINLEY ST, EUG</td>&#13;
+print lxml.etree.tostring(result[6])
+# OUT: <td align="left" colspan="1">Event Number: LEP131007100369</td>
+print lxml.etree.tostring(result[7])
+# OUT: <td align="left">ID: 100369</td>
+print lxml.etree.tostring(result[8])
+# OUT: <td align="left">Priority: 6</td>
+print lxml.etree.tostring(result[9])
+# OUT: <td align="left">Case No: </td>&#13;
+print lxml.etree.tostring(result[10])
+# OUT: <td colspan="4" bgcolor="MediumSlateBlue"><hr color="#000000" /></td>&#13;
+print lxml.etree.tostring(result[11])
+# OUT: <td align="left"><strong>Police Response:</strong> </td>
+print lxml.etree.tostring(result[12])
+# OUT: <td align="left">Incident Desc: Reckless Driving</td>
+result.count()
+# OUT: Traceback (most recent call last):
+# OUT:   File "<input>", line 1, in <module>
+# OUT: TypeError: count() takes exactly one argument (0 given)
+result.count
+# OUT: <built-in method count of list object at 0x10fd60d88>
+len(result)
+# OUT: 76
+for each in result:
+    print lxml.etree.tostring(each)
+    
+
+# OUT: <td align="left"><strong>Police Response:</strong> 10/7/2013 9:59:02 AM</td>
+# OUT: <td align="left">Incident Desc: Person Stop</td>
+# OUT: <td align="left">OFC: </td>
+# OUT: <td align="left">Received: 10/7/2013 9:59:02 AM</td>&#13;
+# OUT: <td align="left">Disp: ADVI</td>
+# OUT: <td align="left" colspan="2">Location: 710 MCKINLEY ST, EUG</td>&#13;
+# OUT: <td align="left" colspan="1">Event Number: LEP131007100369</td>
+# OUT: <td align="left">ID: 100369</td>
+# OUT: <td align="left">Priority: 6</td>
+# OUT: <td align="left">Case No: </td>&#13;
+# OUT: <td colspan="4" bgcolor="MediumSlateBlue"><hr color="#000000" /></td>&#13;
+# OUT: <td align="left"><strong>Police Response:</strong> </td>
+# OUT: <td align="left">Incident Desc: Reckless Driving</td>
+# OUT: <td align="left">OFC: </td>
+# OUT: <td align="left">Received: 10/7/2013 9:59:21 AM</td>&#13;
+# OUT: <td align="left">Disp: REL</td>
+# OUT: <td align="left" colspan="2">Location: TIMBERLINE DR&amp;ASHFORD DR, EUG</td>&#13;
+# OUT: <td align="left" colspan="1">Event Number: LEP131007100371</td>
+# OUT: <td align="left">ID: 100371</td>
+# OUT: <td align="left">Priority: 3</td>
+# OUT: <td align="left">Case No: </td>&#13;
+# OUT: <td colspan="4" bgcolor="MediumSlateBlue"><hr color="#000000" /></td>&#13;
+# OUT: <td align="left"><strong>Police Response:</strong> </td>
+# OUT: <td align="left">Incident Desc: Theft from Vehicle</td>
+# OUT: <td align="left">OFC: </td>
+# OUT: <td align="left">Received: 10/7/2013 9:59:22 AM</td>&#13;
+# OUT: <td align="left">Disp: REPT</td>
+# OUT: <td align="left" colspan="2">Location: 875 WASHINGTON ST, EUG</td>&#13;
+# OUT: <td align="left" colspan="1">Event Number: LEP131007100370</td>
+# OUT: <td align="left">ID: 100370</td>
+# OUT: <td align="left">Priority: 9</td>
+# OUT: <td align="left">Case No: LEP131007018275</td>&#13;
+# OUT: <td colspan="4" bgcolor="MediumSlateBlue"><hr color="#000000" /></td>&#13;
+# OUT: <td align="left"><strong>Police Response:</strong> 10/7/2013 10:14:47 AM</td>
+# OUT: <td align="left">Incident Desc: Patrol Check</td>
+# OUT: <td align="left">OFC: </td>
+# OUT: <td align="left">Received: 10/7/2013 10:14:47 AM</td>&#13;
+# OUT: <td align="left">Disp: PCHK</td>
+# OUT: <td align="left" colspan="2">Location: 341 E 12TH AVE, EUG</td>&#13;
+# OUT: <td align="left" colspan="1">Event Number: LEP131007100373</td>
+# OUT: <td align="left">ID: 100373</td>
+# OUT: <td align="left">Priority: 6</td>
+# OUT: <td align="left">Case No: </td>&#13;
+# OUT: <td colspan="4" bgcolor="MediumSlateBlue"><hr color="#000000" /></td>&#13;
+# OUT: <td align="left"><strong>Police Response:</strong> </td>
+# OUT: <td align="left">Incident Desc: Theft ID</td>
+# OUT: <td align="left">OFC: </td>
+# OUT: <td align="left">Received: 10/7/2013 10:29:20 AM</td>&#13;
+# OUT: <td align="left">Disp: DESK</td>
+# OUT: <td align="left" colspan="2">Location: 2650 SUNNYVIEW LN, EUG</td>&#13;
+# OUT: <td align="left" colspan="1">Event Number: LEP131007100376</td>
+# OUT: <td align="left">ID: 100376</td>
+# OUT: <td align="left">Priority: 9</td>
+# OUT: <td align="left">Case No: </td>&#13;
+# OUT: <td colspan="4" bgcolor="MediumSlateBlue"><hr color="#000000" /></td>&#13;
+# OUT: <td align="left"><strong>Police Response:</strong> </td>
+# OUT: <td align="left">Incident Desc: Theft</td>
+# OUT: <td align="left">OFC: </td>
+# OUT: <td align="left">Received: 10/7/2013 10:32:18 AM</td>&#13;
+# OUT: <td align="left">Disp: INFO</td>
+# OUT: <td align="left" colspan="2">Location: 849 W 6TH AVE, EUG</td>&#13;
+# OUT: <td align="left" colspan="1">Event Number: LEP131007100377</td>
+# OUT: <td align="left">ID: 100377</td>
+# OUT: <td align="left">Priority: 9</td>
+# OUT: <td align="left">Case No: </td>&#13;
+# OUT: <td colspan="4" bgcolor="MediumSlateBlue"><hr color="#000000" /></td>&#13;
+# OUT: <td align="left"><strong>Police Response:</strong> </td>
+# OUT: <td align="left">Incident Desc: Illegal Camping</td>
+# OUT: <td align="left">OFC: </td>
+# OUT: <td align="left">Received: 10/7/2013 10:34:39 AM</td>&#13;
+# OUT: <td align="left">Disp: CAMP</td>
+# OUT: <td align="left" colspan="2">Location: ALMADEN ST&amp;W 6TH AVE, EUG</td>&#13;
+# OUT: <td align="left" colspan="1">Event Number: LEP131007100381</td>
+# OUT: <td align="left">ID: 100381</td>
+# OUT: <td align="left">Priority: 0</td>
+# OUT: <td align="left">Case No: </td>&#13;
+firstres = result[0]
+firstres.text()
+# OUT: Traceback (most recent call last):
+# OUT:   File "<input>", line 1, in <module>
+# OUT: TypeError: 'NoneType' object is not callable
+firstres.text
+print firstres.text
+# OUT: None
+print firstres.text_content
+# OUT: <bound method HtmlElement.text_content of <Element td at 0x10fc05830>>
+print firstres.text_content()
+# OUT: Police Response: 10/7/2013 9:59:02 AM
+for each in result:
+    print each.text_content()
+    
+
+# OUT: Police Response: 10/7/2013 9:59:02 AM
+# OUT: Incident Desc: Person Stop
+# OUT: OFC: 
+# OUT: Received: 10/7/2013 9:59:02 AM
+# OUT: Disp: ADVI
+# OUT: Location: 710 MCKINLEY ST, EUG
+# OUT: Event Number: LEP131007100369
+# OUT: ID: 100369
+# OUT: Priority: 6
+# OUT: Case No: 
+# OUT: Police Response: 
+# OUT: Incident Desc: Reckless Driving
+# OUT: OFC: 
+# OUT: Received: 10/7/2013 9:59:21 AM
+# OUT: Disp: REL
+# OUT: Location: TIMBERLINE DR&ASHFORD DR, EUG
+# OUT: Event Number: LEP131007100371
+# OUT: ID: 100371
+# OUT: Priority: 3
+# OUT: Case No: 
+# OUT: Police Response: 
+# OUT: Incident Desc: Theft from Vehicle
+# OUT: OFC: 
+# OUT: Received: 10/7/2013 9:59:22 AM
+# OUT: Disp: REPT
+# OUT: Location: 875 WASHINGTON ST, EUG
+# OUT: Event Number: LEP131007100370
+# OUT: ID: 100370
+# OUT: Priority: 9
+# OUT: Case No: LEP131007018275
+# OUT: Police Response: 10/7/2013 10:14:47 AM
+# OUT: Incident Desc: Patrol Check
+# OUT: OFC: 
+# OUT: Received: 10/7/2013 10:14:47 AM
+# OUT: Disp: PCHK
+# OUT: Location: 341 E 12TH AVE, EUG
+# OUT: Event Number: LEP131007100373
+# OUT: ID: 100373
+# OUT: Priority: 6
+# OUT: Case No: 
+# OUT: Police Response: 
+# OUT: Incident Desc: Theft ID
+# OUT: OFC: 
+# OUT: Received: 10/7/2013 10:29:20 AM
+# OUT: Disp: DESK
+# OUT: Location: 2650 SUNNYVIEW LN, EUG
+# OUT: Event Number: LEP131007100376
+# OUT: ID: 100376
+# OUT: Priority: 9
+# OUT: Case No: 
+# OUT: Police Response: 
+# OUT: Incident Desc: Theft
+# OUT: OFC: 
+# OUT: Received: 10/7/2013 10:32:18 AM
+# OUT: Disp: INFO
+# OUT: Location: 849 W 6TH AVE, EUG
+# OUT: Event Number: LEP131007100377
+# OUT: ID: 100377
+# OUT: Priority: 9
+# OUT: Case No: 
+# OUT: Police Response: 
+# OUT: Incident Desc: Illegal Camping
+# OUT: OFC: 
+# OUT: Received: 10/7/2013 10:34:39 AM
+# OUT: Disp: CAMP
+# OUT: Location: ALMADEN ST&W 6TH AVE, EUG
+# OUT: Event Number: LEP131007100381
+# OUT: ID: 100381
+# OUT: Priority: 0
+# OUT: Case No: 
