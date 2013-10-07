@@ -1,6 +1,8 @@
 import lxml.html
 import lxml.etree
 import urllib2
+import sqlite3
+from datetime import datetime
 
 def epdcrimelist():
 	"""Grabs latest police activity online and stores it in a list of dictionaries"""
@@ -33,18 +35,19 @@ def epdcrimelist():
 				else:
 					incidentDict['OFC'] = ""
 			elif datarow.startswith("Received:"):
-				incidentDict['TimeReceived'] = datarow[9:]
+				date_object = datetime.strptime(str(datarow[10:]), '%m/%d/%Y %I:%M:%S %p')
+				incidentDict['TimeReceived'] = date_object
 			elif datarow.startswith("Disp:"):
 				incidentDict['Disp'] = datarow[6:]
 			elif datarow.startswith("Location:"):
-				incidentDict['Location'] = datarow[9:]
+				incidentDict['Location'] = datarow[10:]
 			elif datarow.startswith("Event Number:"):
-				incidentDict["EventNum"] = datarow[13:]
+				incidentDict["EventNum"] = datarow[14:]
 			elif datarow.startswith("ID:"):
 				incidentDict['ID'] = datarow[4:]
 			elif datarow.startswith("Priority:"):
-				incidentDict['Priority'] = datarow[9:]
+				incidentDict['Priority'] = datarow[10:]
 			elif datarow.startswith("Case No:"):
-				incidentDict['CaseNo'] = datarow[8:]
+				incidentDict['CaseNo'] = datarow[9:]
 				resultlist.append(incidentDict)
 	return resultlist
