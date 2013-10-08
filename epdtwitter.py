@@ -5,14 +5,16 @@ from models import Incident
 
 
 
-db_session()
 
 def create_db():
     """Creates a sqlite3 database using our models"""
+    db_session()
     init_db()
+    db_session.remove()
 
 def addto_db():
     """adds our incidents to the db"""
+    db_session()
     crimelist = nabber.epdcrimelist()
     for each in crimelist:
         inputid = each['ID']
@@ -27,6 +29,4 @@ def addto_db():
         incident = Incident(id = inputid, poresp = inputporesp, description = inputdescription, ofc = inputofc, timerec = inputtimerec, location = inputlocation, eventNum = inputeventNum, priority = inputpriority, caseNo = inputcaseNo)
         db_session.add(incident)
         db_session.commit()
-
-db_session.remove()
-
+    db_session.remove()
