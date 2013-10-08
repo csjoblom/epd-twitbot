@@ -33,7 +33,7 @@ def addto_db():
             db_session.add(incident)
             db_session.commit()
         except:
-            print "Record Exists." #we discard the record since it probably exists
+            print "Record %s Exists." % (occurance['ID'])#we discard the record since it probably exists
 
     db_session.remove()
 
