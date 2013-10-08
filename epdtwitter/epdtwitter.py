@@ -15,9 +15,10 @@ def create_db():
 
 def addto_db():
     """adds our incidents to the db"""
-    db_session()
+
     incidentlist = nabber.epdcrimelist()
     for occurance in incidentlist:
+        db_session()
         #create new Incident instance
         incident = Incident(id = occurance['ID'],
                             poresp = occurance['PoResp'],
@@ -33,12 +34,14 @@ def addto_db():
 
         #add to the database and then commit the changes.
         try:
-        db_session.commit()
+            db_session.commit()
+            print "Record %s Added." % (occurance['ID'])
 
         except exc.SQLAlchemyError:
-           print "Record %s Exists." % (occurance['ID'])#we discard the record since it probably exists
+           print "Record %s Exists." % (occurance['ID'])#we discard the record since it probably existsa
+           pass
 
-    db_session.remove()
+        db_session.remove()
 
 if __name__ == "__main__":
     addto_db()
