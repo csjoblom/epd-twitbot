@@ -4,16 +4,13 @@ from dbhandler import db_session, init_db
 from models import Incident
 from sqlalchemy import exc
 
-
-
-
 def create_db():
     """Creates a sqlite3 database using our models"""
     db_session()
     init_db()
     db_session.remove()
 
-def addto_db():
+def add_incident():
     """adds our incidents to the db"""
 
     incidentlist = nabber.epdcrimelist()
@@ -44,4 +41,5 @@ def addto_db():
         db_session.remove()
 
 if __name__ == "__main__":
-    addto_db()
+    create_db()
+    add_incident()
