@@ -7,7 +7,7 @@ def twittercast(occurance):
     t = Twitter(auth=OAuth(
             OAUTH_TOKEN,OAUTH_SECRET,
             CONSUMER_KEY,CONSUMER_SECRET))
-    tweet = "Incident:%s, %s, %s, %s" % (occurance['ID'], occurance['Description'], occurance['TimeReceived'], occurance['Location'])
+    tweet = "%s, %s, %s, Incident ID:%s" % (occurance['Description'], occurance['TimeReceived'], occurance['Location'], occurance['ID'])
     print tweet
     try:
         t.statuses.update(status="%s" % tweet)
