@@ -1,0 +1,1 @@
+*/10 * * * * cd /path/to/project && /path/to/virtual/bin/python /path/to/project/epdtwitter.py > /tmp/cronlog.txt 2>&1
