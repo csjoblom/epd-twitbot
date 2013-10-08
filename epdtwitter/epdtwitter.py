@@ -2,6 +2,7 @@ import sqlite3
 import nabber
 from dbhandler import db_session, init_db
 from models import Incident
+from sqlalchemy import exc
 
 
 
@@ -28,12 +29,14 @@ def addto_db():
                             priority = occurance['Priority'],
                             caseNo = occurance['CaseNo'])
 
+        db_session.add(incident)
+
         #add to the database and then commit the changes.
         try:
-            db_session.add(incident)
-            db_session.commit()
-        except:
-            print "Record %s Exists." % (occurance['ID'])#we discard the record since it probably exists
+        db_session.commit()
+
+        except exc.SQLAlchemyError:
+           print "Record %s Exists." % (occurance['ID'])#we discard the record since it probably exists
 
     db_session.remove()
 
