@@ -34,11 +34,18 @@ def add_incident():
             db_session.commit()
             print "Record %s Added." % (occurance['ID'])
 
+            #now we tweet our new record
+            #try:
+                #twittercast(occurance)
+            #except:
+
         except exc.SQLAlchemyError:
            print "Record %s Exists." % (occurance['ID'])#we discard the record since it probably existsa
            pass
 
-        db_session.remove()
+        finally:
+            db_session.remove()
+
 
 if __name__ == "__main__":
     create_db()
