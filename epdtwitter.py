@@ -17,16 +17,21 @@ def addto_db():
     db_session()
     crimelist = nabber.epdcrimelist()
     for each in crimelist:
-        inputid = each['ID']
-        inputporesp = each['PoResp']
-        inputdescription = each['Description']
-        inputofc = each['OFC']
-        inputtimerec = each['TimeReceived']
-        inputlocation = each['Location']
-        inputeventNum = each['EventNum']
-        inputpriority = each['Priority']
-        inputcaseNo = each['CaseNo']
-        incident = Incident(id = inputid, poresp = inputporesp, description = inputdescription, ofc = inputofc, timerec = inputtimerec, location = inputlocation, eventNum = inputeventNum, priority = inputpriority, caseNo = inputcaseNo)
-        db_session.add(incident)
-        db_session.commit()
+        try:
+            test = Incident.query.filter_by(id="%s" % (str(each['ID']))).first()
+            print "Record Exists"
+            pass
+        except:
+            inputid = each['ID']
+            inputporesp = each['PoResp']
+            inputdescription = each['Description']
+            inputofc = each['OFC']
+            inputtimerec = each['TimeReceived']
+            inputlocation = each['Location']
+            inputeventNum = each['EventNum']
+            inputpriority = each['Priority']
+            inputcaseNo = each['CaseNo']
+            incident = Incident(id = inputid, poresp = inputporesp, description = inputdescription, ofc = inputofc, timerec = inputtimerec, location = inputlocation, eventNum = inputeventNum, priority = inputpriority, caseNo = inputcaseNo)
+            db_session.add(incident)
+            db_session.commit()
     db_session.remove()
