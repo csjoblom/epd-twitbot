@@ -28,7 +28,15 @@ def addto_db():
         inputcaseNo = each['CaseNo']
 
         #create new Incident instance
-        incident = Incident(id = inputid, poresp = inputporesp, description = inputdescription, ofc = inputofc, timerec = inputtimerec, location = inputlocation, eventNum = inputeventNum, priority = inputpriority, caseNo = inputcaseNo)
+        incident = Incident(id = inputid,
+                            poresp = inputporesp,
+                            description = inputdescription,
+                            ofc = inputofc,
+                            timerec = inputtimerec,
+                            location = inputlocation,
+                            eventNum = inputeventNum,
+                            priority = inputpriority,
+                            caseNo = inputcaseNo)
 
         #add to the database and then commit the changes.
         try:
