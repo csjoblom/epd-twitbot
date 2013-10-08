@@ -15,7 +15,7 @@ Development is ongoing, currently the plan is to use SQLAlchemy to store everyth
 
 Dependencies
 ------------
-*   python/pip - obviously
+*   python/pip - it's all python, pip is needed to install requirements
 *   virtualenv - not required but highly recommended
 *   lxml - for html crawling/data grabbing.
 *   sqlalchemy - for database interaction. (currently configured for sqlite3)
