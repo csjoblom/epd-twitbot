@@ -13,6 +13,14 @@ Current Status
 
 Development is ongoing, currently the plan is to use SQLAlchemy to store everything in a database. Right now it's configured for sqlite3 but it's easily changeable within the dbhandler.py file.
 
+Dependencies
+------------
+*   lxml - for html crawling/data grabbing
+*   sqlalchemy - for database interaction
+*   bpython(dev only) - used for deving in shell with autocompletion
+
+You can install requirements automatically within a virtualenv by using pip install -r requirements.txt in the base directory of this project.
+
 File Structure
 --------------
 
