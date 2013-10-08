@@ -52,3 +52,8 @@ def epdcrimelist():
                 incidentDict['CaseNo'] = datarow[9:]
                 resultlist.append(incidentDict)
     return resultlist
+
+if __name__ == "__main__":
+   q =  epdcrimelist()
+   for each in q:
+       print each

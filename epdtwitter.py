@@ -19,7 +19,7 @@ def addto_db():
     for each in crimelist:
         try:
             test = Incident.query.filter_by(id="%s" % (str(each['ID']))).first()
-            print "Record Exists"
+            print "Record Exists\n\n"
             pass
         except:
             inputid = each['ID']
@@ -35,3 +35,6 @@ def addto_db():
             db_session.add(incident)
             db_session.commit()
     db_session.remove()
+
+if __name__ == "__main__":
+    addto_db()
