@@ -21,7 +21,8 @@ def addto_db():
             #checks to see if the incident already exists in the db.
             test = Incident.query.filter_by(id="%s" % (str(each['ID']))).first()
             print "Record Exists\n\n"
-            pass
+            pass #we discard this record
+
         except:
             inputid = each['ID']
             inputporesp = each['PoResp']
