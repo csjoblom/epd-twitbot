@@ -17,15 +17,6 @@ def addto_db():
     db_session()
     crimelist = nabber.epdcrimelist()
     for each in crimelist:
-        """
-        try:
-            #checks to see if the incident already exists in the db.
-            test = Incident.query.filter_by(id="%s" % (str(each['ID']))).first()
-            print "Record Exists\n\n"
-            pass #we discard this record
-
-        except:
-        """
         inputid = each['ID']
         inputporesp = each['PoResp']
         inputdescription = each['Description']
