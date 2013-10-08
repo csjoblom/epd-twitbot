@@ -4,6 +4,10 @@ from dbhandler import db_session, init_db
 from models import Incident
 from sqlalchemy import exc
 
+def twittercast(occurance):
+    """Creates the message from the occurance and tweets it"""
+    print "Incident: %s, %s, %s" % (occurance['ID'], occurance['Description'], occurance['TimeReceived'])
+
 def create_db():
     """Creates a sqlite3 database using our models"""
     db_session()
@@ -36,7 +40,7 @@ def add_incident():
 
             #now we tweet our new record
             #try:
-                #twittercast(occurance)
+            twittercast(occurance)
             #except:
 
         except exc.SQLAlchemyError:
