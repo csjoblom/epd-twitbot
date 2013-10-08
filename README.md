@@ -11,7 +11,7 @@ The purpose of this bot is to collect public data from the EPD and publish it to
 Current Status
 --------------
 
-Development is ongoing, currently the plan is to use SQLAlchemy to store everything in a database. Right now it's configured for sqlite3 but it's easily changeable within the dbhandler.py file.
+Main webcrawler and twitter status update functions now have basic functionality. Project runs great with cron and automation seems to be working correctly. I'd like to integrate Latitude/Longitude in tweets and link back to a django generated page containing all information + a map. I would also like to look into using the database information as trend data for map hotspots.
 
 Dependencies
 ------------
