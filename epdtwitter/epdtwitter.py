@@ -15,18 +15,18 @@ def create_db():
 def addto_db():
     """adds our incidents to the db"""
     db_session()
-    crimelist = nabber.epdcrimelist()
-    for each in crimelist:
+    incidentlist = nabber.epdcrimelist()
+    for occurance in incidentlist:
         #create new Incident instance
-        incident = Incident(id = each['ID'],
-                            poresp = each['PoResp'],
-                            description = each['Description'],
-                            ofc = each['OFC'],
-                            timerec = each['TimeReceived'],
-                            location = each['Location'],
-                            eventNum = each['EventNum'],
-                            priority = each['Priority'],
-                            caseNo = each['CaseNo'])
+        incident = Incident(id = occurance['ID'],
+                            poresp = occurance['PoResp'],
+                            description = occurance['Description'],
+                            ofc = occurance['OFC'],
+                            timerec = occurance['TimeReceived'],
+                            location = occurance['Location'],
+                            eventNum = occurance['EventNum'],
+                            priority = occurance['Priority'],
+                            caseNo = occurance['CaseNo'])
 
         #add to the database and then commit the changes.
         try:
