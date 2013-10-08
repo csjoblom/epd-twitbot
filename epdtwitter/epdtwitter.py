@@ -17,26 +17,16 @@ def addto_db():
     db_session()
     crimelist = nabber.epdcrimelist()
     for each in crimelist:
-        inputid = each['ID']
-        inputporesp = each['PoResp']
-        inputdescription = each['Description']
-        inputofc = each['OFC']
-        inputtimerec = each['TimeReceived']
-        inputlocation = each['Location']
-        inputeventNum = each['EventNum']
-        inputpriority = each['Priority']
-        inputcaseNo = each['CaseNo']
-
         #create new Incident instance
-        incident = Incident(id = inputid,
-                            poresp = inputporesp,
-                            description = inputdescription,
-                            ofc = inputofc,
-                            timerec = inputtimerec,
-                            location = inputlocation,
-                            eventNum = inputeventNum,
-                            priority = inputpriority,
-                            caseNo = inputcaseNo)
+        incident = Incident(id = each['ID'],
+                            poresp = each['PoResp'],
+                            description = each['Description'],
+                            ofc = each['OFC'],
+                            timerec = each['TimeReceived'],
+                            location = each['Location'],
+                            eventNum = each['EventNum'],
+                            priority = each['Priority'],
+                            caseNo = each['CaseNo'])
 
         #add to the database and then commit the changes.
         try:
