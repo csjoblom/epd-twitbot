@@ -1,12 +1,16 @@
-import sqlite3
+#local packages
 import nabber
-from dbhandler import db_session, init_db
+
 from models import Incident
+from default_settings import *
+from dbhandler import db_session, init_db
+
+#third-party packages
 from sqlalchemy import exc
 
 def twittercast(occurance):
     """Creates the message from the occurance and tweets it"""
-    print "Incident: %s, %s, %s" % (occurance['ID'], occurance['Description'], occurance['TimeReceived'])
+    print "Incident:%s, %s, %s, %s" % (occurance['ID'], occurance['Description'], occurance['TimeReceived'], occurance['Location'])
 
 def create_db():
     """Creates a sqlite3 database using our models"""
