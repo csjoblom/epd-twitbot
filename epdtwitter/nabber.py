@@ -15,7 +15,8 @@ def epdcrimelist():
     result = doc.xpath('/html/body/form/div[2]/table[2]/tr/td')
     resultlist = []
     for each in result:
-        datarow = str(each.text_content())
+        #print each.text_content().decode('UTF-8').encode('ascii','xmlcharrefreplace')
+        datarow = each.text_content()
         if datarow == "":
             pass
             #print "\nNew Report"
