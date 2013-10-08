@@ -1,12 +1,12 @@
 from twitter import Twitter
-from default_settings import OAUTH_SECRET, OAUTH_TOKEN, CONSUMER_SECRET, CONSUMER_TOKEN
+from default_settings import OAUTH_SECRET, OAUTH_TOKEN, CONSUMER_SECRET, CONSUMER_KEY
 
 def twittercast(occurance):
     """Creates the message from the occurance and tweets it"""
 
     t = Twitter(auth=OAuth(
-            OAUTH_SECRET,OAUTH_TOKEN,
-            CONSUMER_SECRET,CONSUMER_TOKEN))
+            OAUTH_TOKEN,OAUTH_SECRET,
+            CONSUMER_KEY,CONSUMER_SECRET))
 
 
 
