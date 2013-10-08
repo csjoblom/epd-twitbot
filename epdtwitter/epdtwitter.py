@@ -12,6 +12,7 @@ def twittercast(occurance):
     """Creates the message from the occurance and tweets it"""
     print "Incident:%s, %s, %s, %s" % (occurance['ID'], occurance['Description'], occurance['TimeReceived'], occurance['Location'])
 
+
 def create_db():
     """Creates a sqlite3 database using our models"""
     db_session()
