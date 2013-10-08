@@ -20,6 +20,7 @@ Dependencies
 *   lxml - for html crawling/data grabbing.
 *   sqlalchemy - for database interaction. (currently configured for sqlite3)
 *   bpython(dev only) - used for deving in shell with autocompletion.
+*   twitter - python twitter API interaction
 
 You can install requirements automatically within a virtualenv by using pip install -r requirements.txt in the base directory of this project.
 
