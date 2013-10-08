@@ -9,7 +9,7 @@ class Incident(Base):
     poresp = Column(String(50))
     description = Column(String(100))
     ofc = Column(String(100))
-    timerec = Column(DateTime(timezone=True))
+    timerec = Column(DateTime(timezone=False))
     location = Column(String(150))
     eventNum = Column(String(50))
     priority = Column(Integer)
