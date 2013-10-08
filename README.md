@@ -15,9 +15,9 @@ Development is ongoing, currently the plan is to use SQLAlchemy to store everyth
 
 Dependencies
 ------------
-*   lxml - for html crawling/data grabbing
-*   sqlalchemy - for database interaction
-*   bpython(dev only) - used for deving in shell with autocompletion
+*   lxml - for html crawling/data grabbing.
+*   sqlalchemy - for database interaction. (currently configured for sqlite3)
+*   bpython(dev only) - used for deving in shell with autocompletion.
 
 You can install requirements automatically within a virtualenv by using pip install -r requirements.txt in the base directory of this project.
 
@@ -25,7 +25,7 @@ File Structure
 --------------
 
 *   dbhandler.py - handles sqlalchemy configuration, here you can switch between different database types/configurations.
-*   epdtwitter.py - contains two functions - create_db() and addto_db(). this will most likely be the job that's run every 10 minutes to check for updates/post to twitter.
+*   epdtwitter.py - contains two functions - create_db() and addto_db(). this will most likely be the job that runs every 10 minutes to check for updates/post to twitter.
 *   nabber.py - uses lxml to crawl through the EPD website, targets the table and pulls all of the data into a list of dictionaries.
 *   models.py - contains metadata information for our database, modify if you need to add/change database schema stuff.
 
