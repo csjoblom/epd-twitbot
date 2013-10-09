@@ -22,7 +22,6 @@ Dependencies
 *   virtualenv - not required but highly recommended
 *   lxml - for html crawling/data grabbing.
 *   sqlalchemy - for database interaction. (currently configured for sqlite3)
-*   bpython(dev only) - used for deving in shell with autocompletion.
 *   twitter - python twitter API interaction
 *   pygeocoder - grabs latitude/longitude based on an address (for use with google maps)
 
