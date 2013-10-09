@@ -20,7 +20,7 @@ Dependencies
 ------------
 *   python/pip - it's all python, pip is needed to install requirements
 *   virtualenv - not required but highly recommended
-*   lxml - for html crawling/data grabbing.
+*   lxml - for html crawling/data grabbing. (If you can't install lxml on ubuntu/debian please be sure to apt-get libxml2-dev and libxslt-dev and attempt to install again using pip)
 *   sqlalchemy - for database interaction. (currently configured for sqlite3)
 *   twitter - python twitter API interaction
 *   pygeocoder - grabs latitude/longitude based on an address (for use with google maps)
