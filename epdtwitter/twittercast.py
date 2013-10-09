@@ -1,5 +1,12 @@
 from twitter import *
+from pygeocoder import Geocoder
+
 from default_settings import OAUTH_SECRET, OAUTH_TOKEN, CONSUMER_SECRET, CONSUMER_KEY
+
+def geolocale(address):
+    """Gets Lat/Longitude for any given address"""
+    results = Geocoder.geocode(address)
+    return results[0].coordinates
 
 def twittercast(occurance):
     """Creates the message from the occurance and tweets it"""
