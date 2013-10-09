@@ -2,4 +2,6 @@ Pygments==1.6
 SQLAlchemy==0.8.2
 bpython==0.12
 lxml==3.2.3
+pygeocoder==1.2.1.1
+requests==2.0.0
 twitter==1.10.0
