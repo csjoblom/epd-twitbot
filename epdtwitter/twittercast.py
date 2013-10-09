@@ -15,8 +15,11 @@ def twittercast(occurance):
             OAUTH_TOKEN,OAUTH_SECRET,
             CONSUMER_KEY,CONSUMER_SECRET))
     description = str(occurance['Description'])
+    locale = geolocale(occurance['Location'])
+    maplink = "https://maps.google.com/?q=%s,%s" % (locale[0],locale[1])
+    #print maplink
 
-    tweet = "#%s, %s, %s, ID:%s" % (description.replace(" ", "").lower().replace("(s)", "s").replace("&", "and"), occurance['TimeReceived'], occurance['Location'], occurance['ID'])
+    tweet = "#%s, %s, %s, %s , ID:%s" % (description.replace(" ", "").lower().replace("(s)", "s").replace("&", "and"), occurance['TimeReceived'], occurance['Location'], maplink, occurance['ID'])
     print tweet
     try:
         t.statuses.update(status="%s" % tweet)
