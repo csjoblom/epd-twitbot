@@ -1,4 +1,4 @@
-Eugene Police Department Twitter Bot
+Eugene Police Data Twitter Bot
 =====================================
 
 Runs @epdcast on twitter https://www.twitter.com/epdcast
