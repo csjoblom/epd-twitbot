@@ -17,6 +17,7 @@ def twittercast(occurance):
     description = str(occurance['Description'])
     #locale = geolocale(occurance['Location'])
     maplink = "https://maps.google.com/?q=%s" % (occurance['Location'])
+    maplink = maplink.replace(" ", "%20")
 
     tweet = "#%s, %s, %s, %s , ID:%s" % (description.replace(" ", "").lower().replace("(s)", "s").replace("&", "and"), occurance['TimeReceived'], occurance['Location'], maplink, occurance['ID'])
     print tweet
