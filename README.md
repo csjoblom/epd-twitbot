@@ -1,5 +1,8 @@
 Eugene Police Department Twitter Bot
 =====================================
+
+Runs @epdcast on twitter https://www.twitter.com/epdcast
+
 Created by:
 
 *   Chris Sjoblom
@@ -11,7 +14,7 @@ The purpose of this bot is to collect public data from the EPD and publish it to
 Current Status
 --------------
 
-Main webcrawler and twitter status update functions now have basic functionality. Project runs great with cron and automation seems to be working correctly. I'd like to integrate Latitude/Longitude in tweets and link back to a django generated page containing all information + a map. I would also like to look into using the database information as trend data for map hotspots.
+Main webcrawler and twitter status update functions now have basic functionality. Project runs great with cron and automation seems to be working correctly. Will collect data for the next couple weeks and then figure out something to do with it all.
 
 Dependencies
 ------------
@@ -21,6 +24,7 @@ Dependencies
 *   sqlalchemy - for database interaction. (currently configured for sqlite3)
 *   bpython(dev only) - used for deving in shell with autocompletion.
 *   twitter - python twitter API interaction
+*   pygeocoder - grabs latitude/longitude based on an address (for use with google maps)
 
 You can install requirements automatically within a virtualenv by using pip install -r requirements.txt in the base directory of this project.
 
