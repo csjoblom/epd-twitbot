@@ -19,7 +19,7 @@ def twittercast(occurance):
     maplink = "https://maps.google.com/?q=%s" % (occurance['Location'])
 
     if maplink == "https://maps.google.com/?q=":
-        maplink = ""
+        maplink += "Eugene,Or"
     else:
         maplink = maplink.replace(" ", "%20").replace("&", "%20and%20").replace("EUG", "Eugene,%20OR")
 
