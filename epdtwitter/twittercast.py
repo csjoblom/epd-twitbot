@@ -23,7 +23,7 @@ def twittercast(occurance):
     else:
         maplink = maplink.replace(" ", "%20").replace("&", "%20and%20").replace("EUG", "Eugene,%20OR")
 
-    tweet = "#%s, %s, %s, %s , ID:%s,#eugene" % (description.replace(" ", "").lower().replace("(s)", "s").replace("&", "and"), occurance['TimeReceived'], occurance['Location'], maplink, occurance['ID'])
+    tweet = "#%s, %s, %s, %s ,ID:%s, #eugene" % (description.replace(" ", "").lower().replace("(s)", "s").replace("&", "and"), occurance['TimeReceived'], occurance['Location'], maplink, occurance['ID'])
     print tweet
     try:
         t.statuses.update(status="%s" % tweet)
